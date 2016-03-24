@@ -11,8 +11,6 @@ window.onload = function() {
   var doneButton = document.getElementById('done-button');
   doneButton.addEventListener('click', markAsDone, false);
 
-
-
    
 
   function addToDoItem() {
