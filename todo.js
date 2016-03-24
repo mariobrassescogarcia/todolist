@@ -24,8 +24,8 @@ window.onload = function() {
     //This is the current last item of the list
     var last_item_todo = document.getElementById("lasttodo")
 
-    last_item.parentNode.insertBefore(new)
-    last_item_todo.parentNode.insertBefore(new_todo, last_item_todo.nextSibling)
+    last_item_todo.parentNode.insertBefore(last_item, last_item_todo.nextSibling)
+    last_item.parentNode.insertBefore(new_todo, last_item.nextSibling)
 
 
     // add your code here
