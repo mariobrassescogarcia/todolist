@@ -38,9 +38,29 @@ window.onload = function() {
   }
 
   function markAsDone() {
-    doneButton.classList.add('liked');
-    doneButton.innerHTML = "Liked!";
-    document.querySelector('h1').style.color = "red";
+
+    //Create a conditional to check if there are any tasks pending
+    if (document.getElementsByClassName("todo-list-items")[0].children.length > 1 ) {
+        doneButton.classList.add('liked');
+        doneButton.innerHTML = "Liked!";
+        document.querySelector('h1').style.color = "red";
+        var done_list = document.querySelector("ul.done-list-items")
+
+    }
+    
+
+
+
+
+
+
+
+
+
+    // Condition where there are no more tasks pending
+    else {
+      alert("You have finished all your To-Do's. Get a beer and relax")
+    }
   }
   
 }
