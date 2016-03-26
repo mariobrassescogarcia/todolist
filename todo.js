@@ -15,12 +15,13 @@ window.onload = function() {
 
   function addToDoItem() {
 
-    //This is the content of the new to-do
-    var new_todo = document.getElementById("todo-input").value
-    //This is the new item list created where the content will be placed
-    var last_item = document.createElement("li")
-    //This is the current last item of the list
-    var last_item_todo = document.getElementById("lasttodo")
+    //Create a variable containing the content of the new to-do
+    var todo_text = document.createTextNode(document.getElementById("todo-input").value)
+    //Create a variable containing the to-do list.
+    var todo_list = document.querySelector("ul.todo-list-items")
+    //Create the li container that will keep the todo_text
+    var todo_item = document.createElement("li")
+
 
     last_item_todo.parentNode.insertBefore(last_item, last_item_todo.nextSibling)
     last_item.parentNode.insertBefore(new_todo, last_item.nextSibling)
