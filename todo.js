@@ -45,7 +45,9 @@ window.onload = function() {
         doneButton.innerHTML = "Liked!";
         document.querySelector('h1').style.color = "red";
         var done_list = document.querySelector("ul.done-list-items")
-        var done_todo = document.querySelector("ul.todo-list-items")[0]
+        var done_todo = document.querySelector("ul.todo-list-items > li")
+
+        done_todo.setAttribute("class", "done")
 
     }
     
