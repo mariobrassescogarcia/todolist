@@ -23,9 +23,8 @@ window.onload = function() {
     var todo_item = document.createElement("li")
 
 
-    last_item_todo.parentNode.insertBefore(last_item, last_item_todo.nextSibling)
-    last_item.parentNode.insertBefore(new_todo, last_item.nextSibling)
-
+    todo_item.appendChild(todo_text)
+    todo_list.appendChild(todo_item)
 
     // add your code here
     // this should create a new list item in the to-do list
