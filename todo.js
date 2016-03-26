@@ -22,9 +22,15 @@ window.onload = function() {
     //Create the li container that will keep the todo_text
     var todo_item = document.createElement("li")
 
-
+    // Insert the text in the li element
     todo_item.appendChild(todo_text)
+    //Insert the li element in the ul listing
     todo_list.appendChild(todo_item)
+
+    //Make the function return the text we introduced as a To-Do
+
+    alert("You've added this task to your To-Do List " + document.getElementById("todo-input").value) 
+
 
     // add your code here
     // this should create a new list item in the to-do list
