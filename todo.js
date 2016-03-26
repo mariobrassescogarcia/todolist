@@ -48,18 +48,10 @@ window.onload = function() {
         var done_todo = document.querySelector("ul.todo-list-items > li")
 
         done_todo.setAttribute("class", "done")
+        done_list.appendChild(done_todo)
 
     }
     
-
-
-
-
-
-
-
-
-
     // Condition where there are no more tasks pending
     else {
       alert("You have finished all your To-Do's. Get a beer and relax")
